@@ -21,7 +21,8 @@
   <!-- run tests -->
   <script>
     window.expect = chai.expect;
-    mocha.setup('bdd');
+    //mocha.setup('bdd');
+    mocha.setup({ ui:'bdd',timeout: 20000 });
     window.onload = function() {
       mocha.run()
     };
